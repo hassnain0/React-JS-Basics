@@ -29,7 +29,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Data After Mapping</h1>
+      <h1>Checking Repository 1</h1>
       {loading ? (
         <Loading />
       ) : (
@@ -39,7 +39,7 @@ function App() {
             <br />
             <span>Gender: {res.gender}</span>
             <br />
-            <span>{res.name.title}</span>
+            <span>Title :{res.name.title}</span>
             <br />
             <span>{res.name.first} {res.name.last}</span>
 
@@ -47,9 +47,9 @@ function App() {
         ))
 
       )}
-       <form onSubmit={handleSubmit}>
-              <input type='submit' value='load users' />
-            </form>
+      <form onSubmit={handleSubmit}>
+        <input type='submit' value='load users' />
+      </form>
 
     </div>
   );
